@@ -1,60 +1,33 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Blog</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Cricket News</title>
 </head>
 <body>
+    <header>
+        <h1>Cricket News</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-  <h1>Video Blog</h1>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Categories</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <section id="main-content">
+        <!-- News articles, videos, etc. will be dynamically loaded here -->
+    </section>
 
-<section id="main-content">
-  <div class="video">
-    <img src="video_thumbnail.jpg" alt="Video Thumbnail">
-    <h2>Video Title</h2>
-    <p>Description of the video.</p>
-    <button onclick="playVideo()">Play</button>
-  </div>
-
-  <!-- More video entries go here -->
-
-</section>
-
-<aside id="sidebar">
-  <h2>Filters</h2>
-  <label for="category-filter">Category:</label>
-  <select id="category-filter">
-    <option value="all">All Categories</option>
-    <option value="music">Music</option>
-    <option value="tech">Tech</option>
-    <!-- Add more categories as needed -->
-  </select>
-
-  <label for="sort-filter">Sort By:</label>
-  <select id="sort-filter">
-    <option value="recent">Most Recent</option>
-    <option value="popular">Most Popular</option>
-  </select>
-
-  <input type="text" placeholder="Search...">
-</aside>
-
-<footer>
-  <p>&copy; 2023 Video Blog. All rights reserved.</p>
-</footer>
-
-<script src="script.js"></script>
+    <footer>
+        <p>&copy; 2023 Cricket News. All rights reserved.</p>
+    </footer>
 </body>
 </html>
